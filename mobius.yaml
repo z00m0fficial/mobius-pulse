@@ -1,0 +1,30 @@
+mobius:
+  repository: mobius-pulse
+  department: Pulse
+  domain: Analytics
+  service: Organizational Intelligence Metrics
+  canon_version: pending-mobius-canon
+  architecture_version: 1.0.0
+  sync_status: synchronized
+  consumes:
+    - memory-events
+    - voice-confidence-index
+    - routing-decisions
+    - repository-sync-status
+    - department-status
+  produces:
+    - oies
+    - mis
+    - decision-latency
+    - memory-reuse-rate
+    - department-health
+    - metric-snapshots
+  depends_on:
+    - mobius-memory
+    - atlas-core
+    - mobius-router
+    - mobius-voice
+  governance:
+    approval_workflow: true
+    metric_explanation_required: true
+    confidence_required: true
