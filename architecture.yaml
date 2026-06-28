@@ -1,0 +1,22 @@
+repository: mobius-pulse
+version: 1.0.0
+status: foundation
+classification: internal-platform
+primary_layer: analytics
+department: Pulse
+mission: Measure how well an organization learns, remembers, routes, verifies, and improves.
+capabilities:
+  - oies
+  - mis
+  - vci
+  - decision-latency
+  - memory-reuse-rate
+  - department-health
+  - repository-health-trends
+  - organizational-learning-velocity
+  - workflow-efficiency
+quality_gates:
+  source_required: true
+  confidence_required: true
+  metric_definitions_required: true
+  no_metric_without_explanation: true
